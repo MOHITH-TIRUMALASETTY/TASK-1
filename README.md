@@ -24,7 +24,7 @@ A simple **Text-to-Speech** web application built with **Flask** and **gTTS (Goo
 ---
 
 ## Screenshots:
-![App Screenshot](./screenshot.png)  
+![App Screenshot](./TTS.jpg)  
 *(Include an actual screenshot of your app here)*
 
 ---
@@ -88,6 +88,3 @@ To get this project running locally, follow the steps below.
 
 ---
 
-## Example:
-
-If you want to greet someone, input the following text:
