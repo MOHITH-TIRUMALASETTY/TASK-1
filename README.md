@@ -25,7 +25,7 @@ A simple **Text-to-Speech** web application built with **Flask** and **gTTS (Goo
 
 ## Screenshots:
 ![App Screenshot](./TTS.jpg)  
-*(Include an actual screenshot of your app here)*
+
 
 ---
 
