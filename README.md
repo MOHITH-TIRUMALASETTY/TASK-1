@@ -1,37 +1,70 @@
 # TASK-1 Text-to-Speech Web Application
-This is a simple Text-to-Speech (TTS) web application built using Flask and Edge TTS. It allows users to input text, select different voices, adjust pitch and rate, and then play or download the synthesized audio in real-time. Check site
+This project is a simple Text-to-Speech Converter built using Flask and gTTS (Google Text-to-Speech). It takes user input in the form of text and generates a downloadable audio file. The user can customize the voice gender, speech rate, and volume.
 
-Features
-Choose from a variety of voices.
-Adjust tone and speech speed using sliders.
-Play generated speech directly on the webpage.
-Download the generated audio in MP3 format.
-Automatically deletes old audio files to save space.
-Technologies Used
-Flask: Backend framework to handle web requests.
-Edge TTS: Used to synthesize text into speech.
-HTML, CSS, JS: For the frontend of the web application.
-asyncio: Asynchronous Python library for handling TTS requests.
-How to Run the Project
+Features:
+Text-to-Speech Conversion: Convert text input into speech using the Google Text-to-Speech API.
+Voice Gender Selection: Choose between male and female voices.
+Speech Rate: Choose between normal and slow speech rates.
+Volume Control: Adjust the speech volume with a slider.
+Responsive Interface: Fully responsive design that works on desktop and mobile devices.
+Audio Playback: Listen to the generated speech directly on the page.
+
+Technologies Used:
+Python (Flask framework for the web server)
+gTTS (Google Text-to-Speech) for generating speech from text
+HTML, CSS, JavaScript for the front-end interface
+
+How to Run the Application Locally
 Clone the repository:
 
-git clone https://github.com/justoperator/tts-web-app.git
-cd tts-web-app
+bash
+git clone https://github.com/your-username/text-to-speech-flask.git
+cd text-to-speech-flask
+Create a virtual environment (Optional but recommended):
+
+bash
+python3 -m venv venv
+Activate the virtual environment:
+
+On Windows:
+
+bash
+.\venv\Scripts\activate
+On macOS/Linux:
+
+bash
+source venv/bin/activate
 Install dependencies:
-Make sure you have Python installed. Then install the required Python libraries by running:
 
+Install the required libraries via pip:
+
+bash
 pip install -r requirements.txt
-Run the Flask server:
+Run the application:
 
+bash
 python app.py
 Access the application:
-Open your browser and go to http://127.0.0.1:5000.
 
-File Structure
-app.py: Main Flask application file that handles routing and synthesizes text.
-templates/index.html: HTML file for the frontend interface.
-static/style.css: CSS file for styling the frontend.
-static/script.js: JavaScript file for client-side interaction, including text input, button handling, and audio player functionality.
-static/audio/: Directory for storing synthesized audio files.
-Notes
-Old audio files are automatically deleted after 30 seconds to save space on the server.
+Open your browser and go to http://127.0.0.1:5000/.
+File Structure:
+graphql
+.
+├── app.py               # Main Flask application
+├── speech.py            # Logic for generating speech using gTTS
+├── templates
+│   └── index.html       # The main HTML page with form and audio playback
+├── static
+│   └── audio           # Directory to store generated audio files
+├── requirements.txt     # List of required Python packages
+└── README.md            # This file
+
+
+Dependencies:
+Flask: Web framework for Python
+gTTS: Google Text-to-Speech library
+Werkzeug (comes with Flask for file handling)
+To install the required dependencies, run the following:
+
+bash
+pip install flask gtts
