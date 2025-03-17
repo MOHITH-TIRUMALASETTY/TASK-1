@@ -1,70 +1,93 @@
-# TASK-1 Text-to-Speech Web Application
-This project is a simple Text-to-Speech Converter built using Flask and gTTS (Google Text-to-Speech). It takes user input in the form of text and generates a downloadable audio file. The user can customize the voice gender, speech rate, and volume.
+# Text-to-Speech Flask Application
 
-Features:
-Text-to-Speech Conversion: Convert text input into speech using the Google Text-to-Speech API.
-Voice Gender Selection: Choose between male and female voices.
-Speech Rate: Choose between normal and slow speech rates.
-Volume Control: Adjust the speech volume with a slider.
-Responsive Interface: Fully responsive design that works on desktop and mobile devices.
-Audio Playback: Listen to the generated speech directly on the page.
+A simple **Text-to-Speech** web application built with **Flask** and **gTTS (Google Text-to-Speech)**. The app allows users to input text, select voice gender, adjust speech rate, and volume, and then listen to or download the generated speech.
 
-Technologies Used:
-Python (Flask framework for the web server)
-gTTS (Google Text-to-Speech) for generating speech from text
-HTML, CSS, JavaScript for the front-end interface
+---
 
-How to Run the Application Locally
-Clone the repository:
+## Features:
+- **Text-to-Speech Conversion**: Convert text input into speech using Google Text-to-Speech (gTTS).
+- **Voice Gender Selection**: Choose between male and female voices.
+- **Speech Rate**: Choose between normal or slow speech rates.
+- **Volume Control**: Adjust the speech volume with a slider.
+- **Responsive Design**: Fully responsive design for desktop and mobile devices.
+- **Audio Playback**: Listen to the generated speech directly in the browser.
 
-bash
-git clone https://github.com/your-username/text-to-speech-flask.git
-cd text-to-speech-flask
-Create a virtual environment (Optional but recommended):
+---
 
-bash
-python3 -m venv venv
-Activate the virtual environment:
+## Technologies Used:
+- **Python**: Backend language.
+- **Flask**: Python web framework for creating the application.
+- **gTTS**: Google Text-to-Speech API to convert text to speech.
+- **HTML, CSS, JavaScript**: Frontend for user interaction and design.
+- **Bootstrap** (optional if used in styling): For responsive design and UI components.
 
-On Windows:
+---
 
-bash
-.\venv\Scripts\activate
-On macOS/Linux:
+## Screenshots:
+![App Screenshot](./screenshot.png)  
+*(Include an actual screenshot of your app here)*
 
-bash
-source venv/bin/activate
-Install dependencies:
+---
 
-Install the required libraries via pip:
+## Installation Guide
 
-bash
-'''pip install -r requirements.txt''''
-Run the application:
+To get this project running locally, follow the steps below.
 
-bash
-python app.py
-Access the application:
+### Prerequisites:
+- **Python 3.x** installed on your system.
+- **Pip**: Python package installer.
 
-Open your browser and go to http://127.0.0.1:5000/.
-File Structure:
-graphql
-.
-├── app.py               # Main Flask application
-├── speech.py            # Logic for generating speech using gTTS
-├── templates
-│   └── index.html       # The main HTML page with form and audio playback
-├── static
-│   └── audio           # Directory to store generated audio files
-├── requirements.txt     # List of required Python packages
-└── README.md            # This file
+### Steps to Run the Application:
 
+1. **Clone the Repository**:
+    ```bash
+    git clone https://github.com/your-username/text-to-speech-flask.git
+    cd text-to-speech-flask
+    ```
 
-Dependencies:
-Flask: Web framework for Python
-gTTS: Google Text-to-Speech library
-Werkzeug (comes with Flask for file handling)
-To install the required dependencies, run the following:
+2. **Create a Virtual Environment** (optional but recommended):
+    ```bash
+    python3 -m venv venv
+    ```
 
-bash
-pip install flask gtts
+3. **Activate the Virtual Environment**:
+    - On **Windows**:
+      ```bash
+      .\venv\Scripts\activate
+      ```
+    - On **macOS/Linux**:
+      ```bash
+      source venv/bin/activate
+      ```
+
+4. **Install Dependencies**:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+5. **Run the Application**:
+    ```bash
+    python app.py
+    ```
+
+6. **Access the Application**:
+    - Open a browser and go to `http://127.0.0.1:5000/`.
+
+---
+
+## Usage
+
+### Text-to-Speech Conversion:
+
+1. **Enter Text**: Type or paste the text you want to convert into speech in the input box.
+2. **Select Voice Gender**: Choose between a **Male** or **Female** voice.
+3. **Select Speech Rate**: Choose between **Normal** or **Slow** speech rates.
+4. **Adjust Volume**: Use the volume slider to adjust the output volume.
+5. **Generate Speech**: Click on the "Generate Speech" button to convert your text into speech.
+6. **Play Audio**: Once the audio is generated, click the play button to listen to the speech.
+
+---
+
+## Example:
+
+If you want to greet someone, input the following text:
