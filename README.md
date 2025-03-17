@@ -39,7 +39,7 @@ Install dependencies:
 Install the required libraries via pip:
 
 bash
-pip install -r requirements.txt
+'''pip install -r requirements.txt''''
 Run the application:
 
 bash
