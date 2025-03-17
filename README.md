@@ -89,5 +89,5 @@ To get this project running locally, follow the steps below.
 ---
 
 ## Notes
--Old audio files are automatically deleted after 30 seconds to save space on the server.
+Old audio files are automatically deleted after 30 seconds to save space on the server.
 
